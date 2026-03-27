@@ -58,19 +58,19 @@ print(rem_dup(l))
 # 4. Write a function to check if two strings are anagrams.
 # 5. Write a function to find all prime numbers in a given range.
 
-# def allprime(r):
-#     allp = []
-#     for i in range(1,r+1):
-#         count = 0
-#         for j in range(1,i+1):
-#             if i % j == 0:
-#                 count += 1
-#         if count == 2:
-#             allp.append(i)
-#     return allp
+def allprime(r):
+    allp = []
+    for i in range(1,r+1):
+        count = 0
+        for j in range(1,i+1):
+            if i % j == 0:
+                count += 1
+        if count == 2:
+            allp.append(i)
+    return allp
 
-# r = int(input("ENter range:"))
-# print(allprime(r))
+r = int(input("ENter range:"))
+print(allprime(r))
 
 
 # 6. Write a function to return the frequency of each character in a string.

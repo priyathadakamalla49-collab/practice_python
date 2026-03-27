@@ -1,39 +1,39 @@
 # 1. Write a function to find the second largest number in a list.
 
-# def secnum(a):
-#     # a.sort(reverse = True)
-#     # return a[1]
-#     f = s = 0
-#     for i in a:
-#         if i > f:
-#             s = f
-#             f = i
-#         elif i > s and i != f:
-#             s = i
-#     if s == 0:
-#         print("No second highest")
-#     return s
+def secnum(a):
+    # a.sort(reverse = True)
+    # return a[1]
+    f = s = 0
+    for i in a:
+        if i > f:
+            s = f
+            f = i
+        elif i > s and i != f:
+            s = i
+    if s == 0:
+        print("No second highest")
+    return s
 
-# a = list(map(int,input("Enter elements:").split()))   
-# print(secnum(a))
+a = list(map(int,input("Enter elements:").split()))   
+print(secnum(a))
 
 # 2. Write a function to count uppercase and lowercase letters in a string.
 
-# def countletters(s):
-#     count_upper = 0
-#     count_lower = 0
-#     for i in range(0,len(s)):
-#         if s[i].isupper():
-#             count_upper += 1
-#         elif s[i].islower():
-#             count_lower += 1
-#         else:
-#             continue
-#     return f"Uppercase in String:{count_upper},Lowercase in string:{count_lower}"
-#     return 
+def countletters(s):
+    count_upper = 0
+    count_lower = 0
+    for i in range(0,len(s)):
+        if s[i].isupper():
+            count_upper += 1
+        elif s[i].islower():
+            count_lower += 1
+        else:
+            continue
+    return f"Uppercase in String:{count_upper},Lowercase in string:{count_lower}"
+    return 
 
-# s = input("Enter String:")
-# print(countletters(s))
+s = input("Enter String:")
+print(countletters(s))
 
 
 
